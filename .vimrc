@@ -67,5 +67,6 @@ colorscheme molokai        " Molokai color scheme
 let g:molokai_original = 1 " Molokai setting
 let g:rehash256 = 1        " Molokai setting
 
+set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
 let g:Powerline_symbols = 'fancy'          " Powerline
 let g:Powerline_colorscheme='solarized256' " Powerline
