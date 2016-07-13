@@ -15,6 +15,17 @@ sudo easy_install pip
 brew install tmux
 cp .tmux.conf ~/.tmux.conf
 
+####################
+# vim
+####################
+brew install vim
+brew install macvim
+cp .vimrc ~/.vimrc
+cp .tern-project ~/.tern-project
+vim +PluginInstall +qall
+brew install cmake
+~/.vim/bundle/YouCompleteMe/install.py --clang-completer --tern-completer
+
 ###################
 # powerline
 ###################
@@ -37,6 +48,8 @@ cp .zshrc ~/.zshrc
 rm -f ~/.zcompdump; compinit
 
 ####################
-# vim
+# nodejs
 ####################
-
+brew install node
+sudo npm install -g n
+sudo npm install -g typescript typings

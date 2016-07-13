@@ -34,6 +34,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'https://github.com/sheerun/vim-polyglot.git'
+Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -70,3 +71,4 @@ let g:rehash256 = 1        " Molokai setting
 set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
 let g:Powerline_symbols = 'fancy'          " Powerline
 let g:Powerline_colorscheme='solarized256' " Powerline
+
