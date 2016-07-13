@@ -23,6 +23,7 @@ Plugin 'https://github.com/wincent/command-t.git'
 
 " git repos on your local machine (i.e. when working on your own plugin)
 "Plugin 'file:///home/gmarik/path/to/plugin'
+
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -31,8 +32,8 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'https://github.com/sheerun/vim-polyglot.git'
-Plugin 'https://github.com/Lokaltog/vim-powerline.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -53,7 +54,7 @@ filetype plugin indent on    " required
 syntax on
 filetype plugin indent on
 
-set ignorecaase  " Set ignore case
+set ignorecase  " Set ignore case
 
 set laststatus=2 " Alwasy show status bar
 set ruler        " Show cursor positon
