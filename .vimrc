@@ -53,6 +53,8 @@ filetype plugin indent on    " required
 syntax on
 filetype plugin indent on
 
+set ignorecaase  " Set ignore case
+
 set laststatus=2 " Alwasy show status bar
 set ruler        " Show cursor positon
 set number       " Show line number
@@ -64,5 +66,5 @@ colorscheme molokai        " Molokai color scheme
 let g:molokai_original = 1 " Molokai setting
 let g:rehash256 = 1        " Molokai setting
 
-let g:Powerline_symbols = 'fancy' " Powerline
-let g:Powerline_colorscheme='solarized256'
+let g:Powerline_symbols = 'fancy'          " Powerline
+let g:Powerline_colorscheme='solarized256' " Powerline
