@@ -1,15 +1,31 @@
 " Plugin List
 call plug#begin('~/.vim/plugged')
 
+" File navigation, \ + t
 Plug 'https://github.com/wincent/command-t.git', {'do': 'rake make'}
+
+" Selector to Html, Ctrl + E
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+" Powerline
 Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+
+" Syntax highlight
 Plug 'https://github.com/sheerun/vim-polyglot.git'
+
+" Oumi complete
 Plug 'https://github.com/Valloric/YouCompleteMe.git', {'do': './install.py --clang-completer --tern-completer'}
-Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+
+" js template string highligh
 Plug 'https://github.com/Quramy/vim-js-pretty-template.git'
+
+" Unite
 Plug 'Shougo/unite.vim'
+
+" typings plugin
 Plug 'mhartington/vim-typings'
+
+" js indent
 Plug 'jason0x43/vim-js-indent'
 
 call plug#end()
