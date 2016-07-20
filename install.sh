@@ -20,11 +20,11 @@ cp .tmux.conf ~/.tmux.conf
 ####################
 brew install vim
 brew install macvim
+brew install cmake
 cp .vimrc ~/.vimrc
 cp .tern-project ~/.tern-project
-vim +PluginInstall +qall
-brew install cmake
-~/.vim/bundle/YouCompleteMe/install.py --clang-completer --tern-completer
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+vim +PlugInstall +qall
 
 ###################
 # powerline
