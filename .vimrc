@@ -7,6 +7,10 @@ Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'https://github.com/sheerun/vim-polyglot.git'
 Plug 'https://github.com/Valloric/YouCompleteMe.git', {'do': './install.py --clang-completer --tern-completer'}
 Plug 'Shougo/vimproc.vim', {'do' : 'make'}
+Plug 'https://github.com/Quramy/vim-js-pretty-template.git'
+Plug 'Shougo/unite.vim'
+Plug 'mhartington/vim-typings'
+Plug 'jason0x43/vim-js-indent'
 
 call plug#end()
 
@@ -14,7 +18,10 @@ call plug#end()
 syntax on
 filetype plugin indent on
 
-set ignorecase  " Set ignore case
+set ignorecase   " Set ignore case
+set tabstop=4    " Tab = 4 space
+set shiftwidth=4 " Tab width
+set expandtab    " Tab to space
 
 set laststatus=2 " Alwasy show status bar
 set ruler        " Show cursor positon
@@ -30,3 +37,6 @@ let g:rehash256 = 1        " Molokai setting
 set guifont=Meslo\ LG\ S\ Regular\ for\ Powerline:h14
 let g:Powerline_symbols = 'fancy'          " Powerline
 let g:Powerline_colorscheme='solarized256' " Powerline
+
+autocmd FileType javascript JsPreTmpl html
+autocmd FileType typescript JsPreTmpl html
