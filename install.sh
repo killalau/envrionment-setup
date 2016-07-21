@@ -9,6 +9,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 # python
 sudo easy_install pip
 
+# tig
+brew install tig
+
 ###################
 # tmux
 ###################
@@ -23,6 +26,7 @@ brew install macvim
 brew install cmake
 cp .vimrc ~/.vimrc
 cp .tern-project ~/.tern-project
+curl -fLo ~/.vim/colors/molokai.vim --create-dirs https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 vim +PlugInstall +qall
 
