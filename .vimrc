@@ -1,3 +1,6 @@
+" Ignore VI compactiable
+set nocompatible
+
 " Plugin List
 call plug#begin('~/.vim/plugged')
 
@@ -38,6 +41,7 @@ set ignorecase   " Set ignore case
 set tabstop=4    " Tab = 4 space
 set shiftwidth=4 " Tab width
 set expandtab    " Tab to space
+set backspace=indent,eol,start
 
 set laststatus=2 " Alwasy show status bar
 set ruler        " Show cursor positon
