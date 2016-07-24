@@ -5,7 +5,7 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 
 " File navigation, \ + t
-Plug 'https://github.com/wincent/command-t.git', {'do': 'rake make'}
+Plug 'https://github.com/wincent/command-t.git', {'do': 'cd ruby/command-t && /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby extconf.rb && make'}
 
 " Selector to Html, Ctrl + E
 Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
