@@ -60,3 +60,5 @@ let g:Powerline_colorscheme='solarized256' " Powerline
 
 autocmd FileType javascript JsPreTmpl html
 autocmd FileType typescript JsPreTmpl html
+
+set wildignore+=*/node_modules/*,*/bower_components/*
