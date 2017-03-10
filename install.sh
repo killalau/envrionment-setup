@@ -39,7 +39,7 @@ vim +PlugInstall +qall
 # powerline
 ###################
 # install powerline
-pip install --user git+git://github.com/powerline/powerlinepip 
+pip install --user git+git://github.com/powerline/powerline
 pip install --user powerline-status
 
 git clone https://github.com/powerline/fonts.git
@@ -58,7 +58,7 @@ cp .zshrc ~/.zshrc
 rm -f ~/.zcompdump;
 
 ####################
-# reset terminal
+# restart terminal
 ####################
 compinit
 
