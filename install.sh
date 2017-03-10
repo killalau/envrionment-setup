@@ -39,7 +39,8 @@ vim +PlugInstall +qall
 # powerline
 ###################
 # install powerline
-p install --user git+git://github.com/powerline/powerlinepip install --user powerline-status
+pip install --user git+git://github.com/powerline/powerlinepip 
+pip install --user powerline-status
 
 git clone https://github.com/powerline/fonts.git
 ./fonts/install.sh
@@ -54,7 +55,12 @@ brew install zsh-completions
 chsh -s /bin/zsh
 
 cp .zshrc ~/.zshrc
-rm -f ~/.zcompdump; compinit
+rm -f ~/.zcompdump;
+
+####################
+# reset terminal
+####################
+compinit
 
 ####################
 # nodejs
@@ -62,3 +68,8 @@ rm -f ~/.zcompdump; compinit
 brew install node
 sudo npm install -g n
 sudo npm install -g typescript typings
+
+###################
+# For iTerm2 users, if symbols don't show up correctly, go to Preference > Profiles > Text, uncheck "Use a different font for non-ASCII text"
+# Enjoy!!
+###################
