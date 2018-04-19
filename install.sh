@@ -60,5 +60,7 @@ rm -f ~/.zcompdump; compinit
 # nodejs
 ####################
 brew install node
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
 sudo npm install -g n
 sudo npm install -g typescript typings

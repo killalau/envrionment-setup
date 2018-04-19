@@ -88,3 +88,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias vim='/usr/local/opt/macvim/MacVim.app/Contents/MacOS/Vim'
+
+export PATH=$PATH:~/.npm-global
