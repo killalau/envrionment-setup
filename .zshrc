@@ -89,4 +89,15 @@ source $ZSH/oh-my-zsh.sh
 
 alias vim='/usr/local/opt/macvim/MacVim.app/Contents/MacOS/Vim'
 
-export PATH=$PATH:~/.npm-global
+export PATH=$PATH:~/tools
+
+# Android
+export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_SDK_ROOT=~/Library/Android/sdk
+export ANDROID_AVD_HOME=~/.android/avd
+export ANDROID_NDK_ROOT=~/Library/Android/sdk/ndk-bundle
+export PATH=$PATH:$ANDROID_NDK_ROOT:$ANDROID_SDK_ROOT/tools:ANDROID_SDK_ROOT/platform-tools
+
+# Golang
+export GOPATH=$HOME/gitRepository/go-projects
+export PATH=$PATH:$GOPATH/bin

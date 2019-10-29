@@ -1,0 +1,30 @@
+# Packages manager
+yo
+@vue/cli
+
+# Git
+git-standup
+commitizen
+cz-conventional-changelog
+
+# Typescript
+typescript
+tslint
+vsce
+
+# System tools
+pm2
+grunt
+gulp
+bunyan
+
+# SQL
+knex
+sequelize-cli
+
+# Testing
+mocha
+
+# My tools
+btob
+transjson
