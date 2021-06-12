@@ -1,6 +1,5 @@
 # Packages manager
-yo
-@vue/cli
+yarn
 
 # Git
 git-standup
@@ -13,17 +12,15 @@ tslint
 vsce
 
 # System tools
-pm2
-grunt
-gulp
-bunyan
+# pm2
+# grunt
+# gulp
+# bunyan
 
-# SQL
-knex
-sequelize-cli
-
-# Testing
-mocha
+# Dev
+# knex
+# sequelize-cli
+# mocha
 
 # My tools
 btob

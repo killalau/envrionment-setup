@@ -87,9 +87,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias vim='/usr/local/opt/macvim/MacVim.app/Contents/MacOS/Vim'
+alias vim='mvim -v'
 
 export PATH=$PATH:~/tools
+
+# brew
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/frankylau/.zprofile
+
+# rvm
+source /Users/frankylau/.rvm/scripts/rvm
 
 # Android
 export ANDROID_HOME=~/Library/Android/sdk
@@ -101,3 +107,21 @@ export PATH=$PATH:$ANDROID_NDK_ROOT:$ANDROID_SDK_ROOT/tools:ANDROID_SDK_ROOT/pla
 # Golang
 export GOPATH=$HOME/gitRepository/go-projects
 export PATH=$PATH:$GOPATH/bin
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# place this after nvm initialization!
+autoload -U add-zsh-hook
+load-nvmrc() {
+  if [[ -f .nvmrc && -r .nvmrc ]]; then
+    nvm use
+  elif [[ $(nvm version) != $(nvm version default)  ]]; then
+    echo "Reverting to nvm default version"
+    nvm use default
+  fi
+}
+add-zsh-hook chpwd load-nvmrc
+load-nvmrc

@@ -4,22 +4,22 @@
 # basic
 ###################
 # homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # python
 sudo easy_install pip
 
 # utils
-brew install tig
-brew install lcov
+brew install tig # git log GUI
 brew install yq
+brew install lcov # test coverage tool
 
 git config --global --add user.email $GIT_EMAIL
 git config --global --add user.name $GIT_USER
 
 # ruby
 brew install gpg
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 \curl -sSL https://get.rvm.io | bash -s stable
 
 # java
@@ -48,7 +48,7 @@ rm -rf fonts
 
 # zsh
 brew install zsh
-git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 brew install zsh-completions
 chsh -s /bin/zsh
 
@@ -71,7 +71,6 @@ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 source ~/.zshrc
 
 nvm install stable
-brew install yarn
 
 ####################
 # vim
